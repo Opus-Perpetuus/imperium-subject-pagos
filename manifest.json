@@ -23,13 +23,6 @@
       "label": "Editar Pagos"
     }
   ],
-  "pages": [
-    {
-      "id": "pagos.payments",
-      "path": "payments",
-      "permission": "subject.pagos.payments.read"
-    }
-  ],
   "menu": [
     {
       "id": "pagos.root",
@@ -39,16 +32,25 @@
         {
           "id": "pagos.payments",
           "label": "Pagos",
-          "order": 10,
           "pageId": "pagos.payments",
+          "order": 10,
           "path": "payments",
-          "permission": "subject.pagos.payments.read"
+          "permission": "subject.pagos.payments.read",
+          "icon": "document"
         }
       ]
     }
   ],
+  "pages": [
+    {
+      "id": "pagos.payments",
+      "path": "payments",
+      "permission": "subject.pagos.payments.read"
+    }
+  ],
   "storage": {
-    "domain": "shared-nox-postgres"
+    "domain": "shared-nox-postgres",
+    "files": false
   },
   "resources": {
     "payments": "payments"
