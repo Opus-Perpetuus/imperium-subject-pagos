@@ -52,9 +52,9 @@ export const payments_pages: KirletPageDecl[] = [
           form: {
             fields: [
               { name: "name", component: "input-text", label: "Nombre", required: true },
-              { name: "description", component: "input-text", label: "Descripción" },
+              { name: "description", component: "input-textarea", label: "Descripción" },
               { name: "ref", component: "input-text", label: "Referencia (_ref)" },
-              { name: "amount", component: "input-number", label: "amount" },
+              { name: "amount", component: "input-money", label: "amount" },
               { name: "status", component: "input-text", label: "status" },
               { name: "service_slug", component: "input-text", label: "service slug" },
               { name: "provider", component: "input-text", label: "provider" },
@@ -62,7 +62,7 @@ export const payments_pages: KirletPageDecl[] = [
               { name: "provider_ref", component: "input-text", label: "provider ref" },
               { name: "webhook_event_id", component: "input-text", label: "webhook event id" },
               { name: "external_ref", component: "input-text", label: "external ref" },
-              { name: "customer_email", component: "input-text", label: "customer email" },
+              { name: "customer_email", component: "input-text", label: "customer email", type: "email" },
               { name: "invoice_requested", component: "input-checkbox", label: "invoice requested" },
               { name: "invoice_request_id", component: "input-text", label: "invoice request id" },
             ],
